@@ -10,8 +10,8 @@ console.info('Hello, World! (You will see this line every time server resources 
 onEvent('recipes', event => {
   // Change recipes here
 
-  //lists
-  let wood = ['oak','birch','spruce','jungle','acacia','dark_oak']
+  //lists: Const because it never changes 
+  const wood = ['oak','birch','spruce','jungle','acacia','dark_oak']
 
   //remove tool recipes
   event.remove({output: /minecraft:.+_sword/})
